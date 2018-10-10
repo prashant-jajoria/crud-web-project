@@ -1,0 +1,32 @@
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+    http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+    version="2.0">
+    
+<description>My Custom Tag</description>
+
+<tlib-version>2.1</tlib-version>
+
+<short-name>mycustomtags</short-name>
+
+<uri>https://accenture.com/jsp/tlds/mycustomtags</uri>
+
+<tag>
+	<name>tdcolor</name>
+	<tag-class>com.accenture.lkm.customTags.MyCustomTag</tag-class>
+	<body-content>empty</body-content>
+	
+	<attribute>
+	    <name>color</name>
+	    <required>true</required>
+	</attribute>
+	
+	<attribute>
+	    <name>content</name>
+	    <required>true</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+</tag>
+
+</taglib>
